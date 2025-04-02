@@ -1,89 +1,129 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #333333;
+    background-color: #1c1c1c; /* Tom mais escuro de cinza */
     color: #FFFFFF;
     margin: 0;
     padding: 20px;
 }
+
 header {
-    background-color: #333333;
-    color: #FF4500;
-    padding: 30px; /* Aumentado */
+    background-color: #1c1c1c;
+    color: #c72c41; /* Tom mais forte de vermelho */
+    padding: 30px;
     text-align: center;
-    border-bottom: 3px solid #FF4500; /* Aumentado */
+    border-bottom: 3px solid #c72c41; /* Tom mais forte de vermelho */
 }
+
 nav {
     position: absolute;
     top: 30px;
     right: 30px;
     text-align: right;
 }
+
 nav a {
-    background-color: #FF4500;
+    background-color: #c72c41; /* Tom mais forte de vermelho */
     color: #FFFFFF;
-    padding: 12px 18px; /* Aumentado */
+    padding: 12px 18px;
     margin: 0 8px;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
+
 nav a:hover {
-    background-color: #e63946;
+    background-color: #a12030; /* Tom mais escuro de vermelho ao passar o mouse */
 }
+
 section {
-    background-color: #444444;
-    border: 1px solid #FF4500;
+    background-color: #1c1c1c; /* Tom mais escuro de cinza */
+    border: 1px solid #c72c41; /* Tom mais forte de vermelho */
     border-radius: 8px;
-    padding: 60px; /* Aumentado */
-    margin: 80px 0; /* Aumentado */
+    padding: 40px;
+    margin: 40px 0;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
+
 h1, h2 {
     margin: 0;
-    padding-bottom: 20px; /* Espaço abaixo do título */
+    padding-bottom: 20px;
 }
+
 .sobre-mim {
     display: flex;
-    align-items: flex-start; /* Alinha o texto ao topo da imagem */
-    gap: 40px; /* Espaço entre a imagem e o texto */
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
 }
-.sobre-mim img {
-    width: 580px;
-    height:480px;
+
+.card {
+    background-color: #555555; /* Cor de fundo do card */
+    border: 1px solid #c72c41; /* Tom mais forte de vermelho */
+    border-radius: 8px; /* Cantos arredondados */
+    width: 100%; /* Cada card ocupa 100% do espaço disponível */
+    max-width: 480px; /* Largura máxima dos cards */
+    flex: 1; /* Faz com que os cards cresçam igualmente */
+    overflow: hidden; /* Garante que nada saia do card */
+    transition: transform 0.3s; /* Efeito ao passar o mouse */
 }
-.sobre-mim p {
-    max-width: 600px; /* Largura máxima do texto */
-    line-height: 1.6; /* Aumenta o espaço entre linhas para melhor legibilidade */
-    margin: 0; /* Remove margens padrão */
+
+.card:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
 }
+
+.imagem-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #c72c41; /* Borda inferior da imagem */
+}
+
+.texto-card {
+    padding: 20px;
+    color: #FFFFFF;
+    line-height: 1.6;
+    overflow-y: auto; /* Permite rolar o texto verticalmente */
+    flex-grow: 1; /* Faz o texto ocupar o espaço restante */
+}
+
+
 .certificados {
     display: flex;
-    overflow: hidden;
-    position: relative;
-    height: 180px; /* Aumentado */
+    flex-wrap: wrap; /* Permite que os certificados ocupem várias linhas */
+    justify-content: center; /* Centraliza os certificados */
+    gap: 20px; /* Espaço entre os certificados */
 }
+
 .certificado {
-    flex: 0 0 180px; /* Aumentado */
-    background-color: #555555;
-    border: 1px solid #FF4500;
-    border-radius: 8px;
-    margin: 15px; /* Aumentado */
+    flex: 0 0 300px; /* Aumenta a largura de cada certificado */
+    background-color: #555555; /* Cor de fundo do cartão */
+    border: 1px solid #c72c41; /* Tom mais forte de vermelho */
+    border-radius: 8px; /* Cantos arredondados */
+    margin: 10px; /* Margem entre os certificados */
     text-align: center;
-    line-height: 180px; /* Aumentado */
-    transition: transform 0.5s ease;
-    font-size: 1.2em; /* Aumentado */
+    transition: transform 0.3s; /* Efeito ao passar o mouse */
 }
+
+.certificado img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do certificado */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 200px; /* Define uma altura máxima para as imagens */
+    border-bottom: 1px solid #c72c41; /* Borda inferior da imagem */
+    border-top-left-radius: 8px; /* Cantos arredondados no topo */
+    border-top-right-radius: 8px; /* Cantos arredondados no topo */
+}
+
 .carousel {
     display: flex;
     transition: transform 0.5s ease;
-    position: absolute;
+    position: relative;
 }
+
 /* Responsividade */
 @media (max-width: 600px) {
     section {
-        padding: 30px; /* Ajustado */
+        padding: 30px;
     }
     .certificado {
         flex: 0 0 120px; /* Ajustado */
