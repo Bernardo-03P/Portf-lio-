@@ -35,9 +35,9 @@ nav a:hover {
     background-color: #a12030; /* Tom mais escuro de vermelho ao passar o mouse */
 }
 
+/* Estilos Gerais */
 section {
     background-color: #1c1c1c; /* Tom mais escuro de cinza */
-    border: 1px solid #c72c41; /* Tom mais forte de vermelho */
     border-radius: 8px;
     padding: 40px;
     margin: 40px 0;
@@ -46,6 +46,23 @@ section {
     margin-right: auto;
 }
 
+/* Estilos para a seção "Sobre Mim" */
+#sobre {
+
+}
+
+/* Estilos para a seção "Currículo e Certificados" */
+#certificado123 {
+    border: 1px solid #a12030; /* Tom verde */
+}
+
+/* Estilos para a seção "Portfólios Anteriores" */
+#portfolios {
+   
+}
+#curriculo{
+    
+}
 h1, h2 {
     margin: 0;
     padding-bottom: 20px;
@@ -55,16 +72,12 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    gap: 20px;
+    gap: 50px;
 }
 
 .card {
-    background-color: #555555; /* Cor de fundo do card */
-    border: 1px solid #c72c41; /* Tom mais forte de vermelho */
-    border-radius: 8px; /* Cantos arredondados */
     width: 100%; /* Cada card ocupa 100% do espaço disponível */
     max-width: 480px; /* Largura máxima dos cards */
-    flex: 1; /* Faz com que os cards cresçam igualmente */
     overflow: hidden; /* Garante que nada saia do card */
     transition: transform 0.3s; /* Efeito ao passar o mouse */
 }
@@ -76,7 +89,6 @@ h1, h2 {
 .imagem-card img {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #c72c41; /* Borda inferior da imagem */
 }
 
 .texto-card {
