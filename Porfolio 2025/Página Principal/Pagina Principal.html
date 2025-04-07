@@ -9,11 +9,22 @@
 <body>
     <header>
         <h1>Meu Portfólio</h1>
-        <nav>
-            <a href="#humanas">Humanas</a>
-            <a href="#natureza">Natureza</a>
-            <a href="#matematica">Matemática</a>
-            <a href="#linguagens">Linguagens</a>
+        <nav class="nav">
+            <ul>
+                <li><a href="#sobre" onclick="showSection('sobre')">Sobre Mim</a></li>
+                <li><a href="#curriculo" onclick="showSection('curriculo')">Currículo</a></li>
+                <li class="drop"><a href="#">Matérias</a>
+                    <ul class="dropdown">
+                        <li><a href="/Matéria 1/Humanas.html">Humanas</a></li>
+                        <li><a href="/Matéria 2/Linguagens.html">Linguagens</a></li>
+                        <li><a href="/Matéria 3/Matemática.html">Matemática</a></li>
+                        <li><a href="/Matéria 4/Natureza.html">Natureza</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tecnico" onclick="showSection('tecnico')">Técnico</a></li>
+                <li><a href="#certificado123" onclick="showSection('certificado123')">Certificados</a></li>
+                <li><a href="#portfolios" onclick="showSection('portfolios')">Portfólio</a></li>
+            </ul>
         </nav>
     </header>
     

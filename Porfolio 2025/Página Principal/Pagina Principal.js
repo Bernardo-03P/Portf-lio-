@@ -83,4 +83,10 @@ let currentIndex = 0;
             }
         }
 
-        
+        function showSection(id) {
+            const subMenus = document.querySelectorAll('.sub-menu');
+            subMenus.forEach(menu => {
+                menu.style.display = 'none'; // Oculta todas as seções
+            });
+            document.getElementById(id).style.display = 'block'; // Mostra a seção selecionada
+        }
