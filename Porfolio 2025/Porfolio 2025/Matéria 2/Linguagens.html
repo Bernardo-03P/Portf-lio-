@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Atividades</title>
+    <link rel="stylesheet" href="Linguagens.css">
+</head>
+<body>
+    <header>
+        <h1>Atividades do Linguagens</h1>
+        <nav class="nav">
+            <ul>
+                <li class="drop"><a href="#">Matérias</a>
+                    <ul class="dropdown">
+                        <li><a href="/Matéria 1/Humanas.html">Humanas</a></li>
+                        <li><a href="/Matéria 2/Linguagens.html">Linguagens</a></li>
+                        <li><a href="/Matéria 3/Matemática.html">Matemática</a></li>
+                        <li><a href="/Matéria 4/Natureza.html">Natureza</a></li>
+                    </ul>
+                </li>
+                <li class="drop"><a href="#">Técnico</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Modelagem de Sistemas</a></li>
+                        <li><a href="#">IoT</a></li>
+                    </ul>
+                </li>
+                <li><a href="/Página Principal/Pagina Principal.html" onclick="showSection('sobre')">Sobre Mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="trimestre">
+        <h2>1º Trimestre</h2>
+        <div class="atividades-container">
+            <section class="atividade">
+                <img src="URL_DA_IMAGEM1" alt="Atividade 1">
+                <h3>Atividade 1</h3>
+                <button onclick="openModal('Descrição da Atividade 1')">Mais Informações</button>
+            </section>
+            <section class="atividade">
+                <img src="URL_DA_IMAGEM2" alt="Atividade 2">
+                <h3>Atividade 2</h3>
+                <button onclick="openModal('Descrição da Atividade 2')">Mais Informações</button>
+            </section>
+            <section class="atividade">
+                <img src="URL_DA_IMAGEM3" alt="Atividade 3">
+                <h3>Atividade 3</h3>
+                <button onclick="openModal('Descrição da Atividade 3')">Mais Informações</button>
+            </section>
+        </div>
+    </div>
+
+    <div class="trimestre">
+        <h2>2º Trimestre</h2>
+        <div class="atividades-container">
+            <section class="atividade">
+                <img src="URL_DA_IMAGEM4" alt="Atividade 4">
+                <h3>Atividade 1</h3>
+                <button onclick="openModal('Descrição da Atividade 4')">Mais Informações</button>
+            </section>
+            <section class="atividade">
+                <img src="URL_DA_IMAGEM5" alt="Atividade 5">
+                <h3>Atividade 2</h3>
+                <button onclick="openModal('Descrição da Atividade 5')">Mais Informações</button>
+            </section>
+            <section class="atividade">
+                <img src="URL_DA_IMAGEM6" alt="Atividade 6">
+                <h3>Atividade 3</h3>
+                <button onclick="openModal('Descrição da Atividade 6')">Mais Informações</button>
+            </section>
+        </div>
+    </div>
+
+    <div class="trimestre">
+        <h2>3º Trimestre</h2>
+        <div class="atividades-container">
+            <section class="atividade">
+                <img src="URL_DA_IMAGEM7" alt="Atividade 7">
+                <h3>Atividade 1</h3>
+                <button onclick="openModal('Descrição da Atividade 7')">Mais Informações</button>
+            </section>
+            <section class="atividade">
+                <img src="URL_DA_IMAGEM8" alt="Atividade 8">
+                <h3>Atividade 2</h3>
+                <button onclick="openModal('Descrição da Atividade 8')">Mais Informações</button>
+            </section>
+            <section class="atividade">
+                <img src="URL_DA_IMAGEM9" alt="Atividade 9">
+                <h3>Atividade 3</h3>
+                <button onclick="openModal('Descrição da Atividade 9')">Mais Informações</button>
+            </section>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle">Título da Atividade</h3>
+            <p id="modalDescription">Descrição da atividade aqui.</p>
+        </div>
+    </div>
+
+
+    <script src="Linguagens.js"></script>
+</body>
+</html>
